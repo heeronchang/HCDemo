@@ -7,7 +7,45 @@
 		<key>CanPerformAction.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MyFirstSiri.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>MyFirstSiriUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6C00BA16201ECE12007B32C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C00BA20201ECE12007B32C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C8F95E41FCE9BFF00C725D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C8F95FC1FCE9BFF00C725D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C8F96071FCE9BFF00C725D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

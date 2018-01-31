@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C00BA1B201ECE12007B32C9 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C00BA1A201ECE12007B32C9 /* IntentHandler.m */; };
+		6C00BA24201ECE12007B32C9 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C00BA23201ECE12007B32C9 /* IntentsUI.framework */; };
+		6C00BA28201ECE12007B32C9 /* IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C00BA27201ECE12007B32C9 /* IntentViewController.m */; };
+		6C00BA2B201ECE12007B32C9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C00BA29201ECE12007B32C9 /* MainInterface.storyboard */; };
+		6C00BA2F201ECE12007B32C9 /* MyFirstSiriUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C00BA21201ECE12007B32C9 /* MyFirstSiriUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C00BA32201ECE12007B32C9 /* MyFirstSiri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C00BA17201ECE12007B32C9 /* MyFirstSiri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6C8F95EA1FCE9BFF00C725D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8F95E91FCE9BFF00C725D8 /* AppDelegate.m */; };
 		6C8F95ED1FCE9BFF00C725D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8F95EC1FCE9BFF00C725D8 /* ViewController.m */; };
 		6C8F95F01FCE9BFF00C725D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8F95EE1FCE9BFF00C725D8 /* Main.storyboard */; };
@@ -20,6 +26,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6C00BA2D201ECE12007B32C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C8F95DD1FCE9BFF00C725D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C00BA20201ECE12007B32C9;
+			remoteInfo = MyFirstSiriUI;
+		};
+		6C00BA30201ECE12007B32C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C8F95DD1FCE9BFF00C725D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C00BA16201ECE12007B32C9;
+			remoteInfo = MyFirstSiri;
+		};
 		6C8F95FE1FCE9BFF00C725D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6C8F95DD1FCE9BFF00C725D8 /* Project object */;
@@ -36,7 +56,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6C00BA39201ECE12007B32C9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C00BA32201ECE12007B32C9 /* MyFirstSiri.appex in Embed App Extensions */,
+				6C00BA2F201ECE12007B32C9 /* MyFirstSiriUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6C00BA12201ECCE0007B32C9 /* CanPerformAction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CanPerformAction.entitlements; sourceTree = "<group>"; };
+		6C00BA17201ECE12007B32C9 /* MyFirstSiri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyFirstSiri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C00BA19201ECE12007B32C9 /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
+		6C00BA1A201ECE12007B32C9 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
+		6C00BA1C201ECE12007B32C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C00BA21201ECE12007B32C9 /* MyFirstSiriUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyFirstSiriUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C00BA23201ECE12007B32C9 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		6C00BA26201ECE12007B32C9 /* IntentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentViewController.h; sourceTree = "<group>"; };
+		6C00BA27201ECE12007B32C9 /* IntentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentViewController.m; sourceTree = "<group>"; };
+		6C00BA2A201ECE12007B32C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6C00BA2C201ECE12007B32C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C8F95E51FCE9BFF00C725D8 /* CanPerformAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanPerformAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8F95E81FCE9BFF00C725D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6C8F95E91FCE9BFF00C725D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +106,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6C00BA14201ECE12007B32C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C00BA1E201ECE12007B32C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C00BA24201ECE12007B32C9 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C8F95E21FCE9BFF00C725D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,12 +145,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C00BA18201ECE12007B32C9 /* MyFirstSiri */ = {
+			isa = PBXGroup;
+			children = (
+				6C00BA19201ECE12007B32C9 /* IntentHandler.h */,
+				6C00BA1A201ECE12007B32C9 /* IntentHandler.m */,
+				6C00BA1C201ECE12007B32C9 /* Info.plist */,
+			);
+			path = MyFirstSiri;
+			sourceTree = "<group>";
+		};
+		6C00BA22201ECE12007B32C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C00BA23201ECE12007B32C9 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C00BA25201ECE12007B32C9 /* MyFirstSiriUI */ = {
+			isa = PBXGroup;
+			children = (
+				6C00BA26201ECE12007B32C9 /* IntentViewController.h */,
+				6C00BA27201ECE12007B32C9 /* IntentViewController.m */,
+				6C00BA29201ECE12007B32C9 /* MainInterface.storyboard */,
+				6C00BA2C201ECE12007B32C9 /* Info.plist */,
+			);
+			path = MyFirstSiriUI;
+			sourceTree = "<group>";
+		};
 		6C8F95DC1FCE9BFF00C725D8 = {
 			isa = PBXGroup;
 			children = (
 				6C8F95E71FCE9BFF00C725D8 /* CanPerformAction */,
 				6C8F96001FCE9BFF00C725D8 /* CanPerformActionTests */,
 				6C8F960B1FCE9BFF00C725D8 /* CanPerformActionUITests */,
+				6C00BA18201ECE12007B32C9 /* MyFirstSiri */,
+				6C00BA25201ECE12007B32C9 /* MyFirstSiriUI */,
+				6C00BA22201ECE12007B32C9 /* Frameworks */,
 				6C8F95E61FCE9BFF00C725D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +193,8 @@
 				6C8F95E51FCE9BFF00C725D8 /* CanPerformAction.app */,
 				6C8F95FD1FCE9BFF00C725D8 /* CanPerformActionTests.xctest */,
 				6C8F96081FCE9BFF00C725D8 /* CanPerformActionUITests.xctest */,
+				6C00BA17201ECE12007B32C9 /* MyFirstSiri.appex */,
+				6C00BA21201ECE12007B32C9 /* MyFirstSiriUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +202,7 @@
 		6C8F95E71FCE9BFF00C725D8 /* CanPerformAction */ = {
 			isa = PBXGroup;
 			children = (
+				6C00BA12201ECCE0007B32C9 /* CanPerformAction.entitlements */,
 				6C8F95E81FCE9BFF00C725D8 /* AppDelegate.h */,
 				6C8F95E91FCE9BFF00C725D8 /* AppDelegate.m */,
 				6C8F95EB1FCE9BFF00C725D8 /* ViewController.h */,
@@ -145,6 +241,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6C00BA16201ECE12007B32C9 /* MyFirstSiri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C00BA36201ECE12007B32C9 /* Build configuration list for PBXNativeTarget "MyFirstSiri" */;
+			buildPhases = (
+				6C00BA13201ECE12007B32C9 /* Sources */,
+				6C00BA14201ECE12007B32C9 /* Frameworks */,
+				6C00BA15201ECE12007B32C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFirstSiri;
+			productName = MyFirstSiri;
+			productReference = 6C00BA17201ECE12007B32C9 /* MyFirstSiri.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6C00BA20201ECE12007B32C9 /* MyFirstSiriUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C00BA33201ECE12007B32C9 /* Build configuration list for PBXNativeTarget "MyFirstSiriUI" */;
+			buildPhases = (
+				6C00BA1D201ECE12007B32C9 /* Sources */,
+				6C00BA1E201ECE12007B32C9 /* Frameworks */,
+				6C00BA1F201ECE12007B32C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFirstSiriUI;
+			productName = MyFirstSiriUI;
+			productReference = 6C00BA21201ECE12007B32C9 /* MyFirstSiriUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		6C8F95E41FCE9BFF00C725D8 /* CanPerformAction */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C8F96111FCE9BFF00C725D8 /* Build configuration list for PBXNativeTarget "CanPerformAction" */;
@@ -152,10 +282,13 @@
 				6C8F95E11FCE9BFF00C725D8 /* Sources */,
 				6C8F95E21FCE9BFF00C725D8 /* Frameworks */,
 				6C8F95E31FCE9BFF00C725D8 /* Resources */,
+				6C00BA39201ECE12007B32C9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6C00BA2E201ECE12007B32C9 /* PBXTargetDependency */,
+				6C00BA31201ECE12007B32C9 /* PBXTargetDependency */,
 			);
 			name = CanPerformAction;
 			productName = CanPerformAction;
@@ -207,9 +340,22 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Heeron Chang";
 				TargetAttributes = {
+					6C00BA16201ECE12007B32C9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6C00BA20201ECE12007B32C9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					6C8F95E41FCE9BFF00C725D8 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					6C8F95FC1FCE9BFF00C725D8 = {
 						CreatedOnToolsVersion = 9.1;
@@ -239,11 +385,28 @@
 				6C8F95E41FCE9BFF00C725D8 /* CanPerformAction */,
 				6C8F95FC1FCE9BFF00C725D8 /* CanPerformActionTests */,
 				6C8F96071FCE9BFF00C725D8 /* CanPerformActionUITests */,
+				6C00BA16201ECE12007B32C9 /* MyFirstSiri */,
+				6C00BA20201ECE12007B32C9 /* MyFirstSiriUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6C00BA15201ECE12007B32C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C00BA1F201ECE12007B32C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C00BA2B201ECE12007B32C9 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C8F95E31FCE9BFF00C725D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,6 +434,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C00BA13201ECE12007B32C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C00BA1B201ECE12007B32C9 /* IntentHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C00BA1D201ECE12007B32C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C00BA28201ECE12007B32C9 /* IntentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C8F95E11FCE9BFF00C725D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,6 +481,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6C00BA2E201ECE12007B32C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C00BA20201ECE12007B32C9 /* MyFirstSiriUI */;
+			targetProxy = 6C00BA2D201ECE12007B32C9 /* PBXContainerItemProxy */;
+		};
+		6C00BA31201ECE12007B32C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C00BA16201ECE12007B32C9 /* MyFirstSiri */;
+			targetProxy = 6C00BA30201ECE12007B32C9 /* PBXContainerItemProxy */;
+		};
 		6C8F95FF1FCE9BFF00C725D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6C8F95E41FCE9BFF00C725D8 /* CanPerformAction */;
@@ -315,6 +504,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6C00BA29201ECE12007B32C9 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C00BA2A201ECE12007B32C9 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		6C8F95EE1FCE9BFF00C725D8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -334,6 +531,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6C00BA34201ECE12007B32C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2M5J5HV6Y7;
+				INFOPLIST_FILE = MyFirstSiriUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lansejuli.www.CanPerformAction.MyFirstSiriUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C00BA35201ECE12007B32C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2M5J5HV6Y7;
+				INFOPLIST_FILE = MyFirstSiriUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lansejuli.www.CanPerformAction.MyFirstSiriUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6C00BA37201ECE12007B32C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2M5J5HV6Y7;
+				INFOPLIST_FILE = MyFirstSiri/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lansejuli.www.CanPerformAction.MyFirstSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C00BA38201ECE12007B32C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2M5J5HV6Y7;
+				INFOPLIST_FILE = MyFirstSiri/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lansejuli.www.CanPerformAction.MyFirstSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		6C8F960F1FCE9BFF00C725D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -442,6 +699,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CanPerformAction/CanPerformAction.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2M5J5HV6Y7;
 				INFOPLIST_FILE = CanPerformAction/Info.plist;
@@ -457,6 +715,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CanPerformAction/CanPerformAction.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2M5J5HV6Y7;
 				INFOPLIST_FILE = CanPerformAction/Info.plist;
@@ -529,6 +788,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6C00BA33201ECE12007B32C9 /* Build configuration list for PBXNativeTarget "MyFirstSiriUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C00BA34201ECE12007B32C9 /* Debug */,
+				6C00BA35201ECE12007B32C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C00BA36201ECE12007B32C9 /* Build configuration list for PBXNativeTarget "MyFirstSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C00BA37201ECE12007B32C9 /* Debug */,
+				6C00BA38201ECE12007B32C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6C8F95E01FCE9BFF00C725D8 /* Build configuration list for PBXProject "CanPerformAction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

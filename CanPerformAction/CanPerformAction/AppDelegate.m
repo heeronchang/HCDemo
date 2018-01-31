@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    [INPreferences requestSiriAuthorization:
+    
+    
+    
+    // sirikit
+    
     return YES;
 }
 
